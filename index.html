@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+</head>
+
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+
+    <div>
+        <div id="filters">
+            <input type="button" value="All" onclick="filter(undefined)" />
+            <input type="button" value="Active" onclick="filter(true)" />
+            <input type="button" value="Completed" onclick="filter(false)" />
+        </div>
+
+        <div id="tst"></div>
+        <input id="tb" type="text" />
+        <input type="button" value="ADD" onclick="add()" />
+        <div id="list">
+
+        </div>
+    </div>
+</body>
+
+</html>
